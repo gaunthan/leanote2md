@@ -56,7 +56,7 @@ def get_notes(nb_id):
     """
     payload = {
         'token': token,
-        'notebokkId': nb_id,
+        'notebookId': nb_id,
     }
     r = req.get(LEANOTE_API_BASE + '/note/getNotes', params=payload)
     if r.status_code != req.codes.ok:
